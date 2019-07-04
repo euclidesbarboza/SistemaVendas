@@ -4,9 +4,9 @@
 	$quantidade = filter_input(INPUT_POST, "quantidade");
 	$precoVenda = filter_input(INPUT_POST, "precoVenda");
 	
-	$dados= array($nome, $descricao, $quantidade, $precovenda);
-	
+	$dados= array($nome, $descricao, $quantidade, $precoVenda);
+
 	include("Produto.php");
 	$prod = new Produto(); 
-	$prod = cadastrar($dados);
+	$prod->cadastrar($dados);
 ?>

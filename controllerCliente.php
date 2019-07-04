@@ -7,5 +7,5 @@
 	
 	include("Cliente.php");
 	$clie = new Cliente(); 
-	$clie = cadastrar($dados);
+	$clie->cadastrar($dados);
 ?>

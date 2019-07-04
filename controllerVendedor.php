@@ -7,5 +7,5 @@
 	
 	include("Vendedor.php");
 	$vend = new Vendedor(); 
-	$vend = cadastrar($dados);
+	$vend->cadastrar($dados);
 ?>
